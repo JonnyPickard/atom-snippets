@@ -1,0 +1,45 @@
+".source.js.jsx":
+
+  "Render Comment React":
+    prefix: "_ren"
+    body: '''
+      /**
+       * Render
+       * @return {ReactElement} markup
+       */
+    '''
+
+  "MapStateToProps Comment React":
+    prefix: "_map"
+    body: '''
+      /**
+       * MapStateToProps implementation.
+       * @return {object} new state object
+       * @param {object} state object
+       * @param {object} ownProps object
+       */
+    '''
+
+  "Class Comment React":
+    prefix: "_class"
+    body: '''
+      /**
+       *  $1 Fragment React component.
+       */
+    '''
+
+  "Default Props Comment React":
+    prefix: "_dprop"
+    body: '''
+      /**
+       * Default Props implementation.
+       */
+    '''
+
+  "Props Comment React":
+    prefix: "_prop"
+    body: '''
+      /**
+       *  Props implementation.
+       */
+    '''

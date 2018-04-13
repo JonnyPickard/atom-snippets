@@ -1,0 +1,12 @@
+".source.js.jsx, .source.css, .source.js.jsx":
+  FIXME:
+    prefix: "f"
+    body: "// FIXME"
+
+  "Console Log":
+    prefix: "clc"
+    body: "console.log('$1', $1)"
+
+  "Console Log Text Only":
+    prefix: "cll"
+    body: "console.log($1)"

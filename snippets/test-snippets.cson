@@ -1,0 +1,39 @@
+".source.js.jsx":
+  "Snapshot Mount":
+    prefix: "snapm"
+    body: '''
+      const wrapper = mount(<$1 {...props}/>);
+      expect(wrapper).toMatchSnapshot();
+    '''
+  "Snapshot Shallow":
+    prefix: "snaps"
+    body: '''
+      const wrapper = shallow(<$1 {...props}/>);
+      expect(wrapper).toMatchSnapshot();
+    '''
+  "Expect(wrapper).toMatchSnapshot();":
+    prefix: "snap"
+    body: "expect(wrapper).toMatchSnapshot();"
+  "Setup tests react":
+    prefix: "tesr"
+    body: '''
+      import $1 from '$2';
+
+      describe('<$1 />', () => {
+        it('renders correctly', () => {
+          const wrapper = shallow(<$1 />);
+          expect(wrapper).toMatchSnapshot();
+        });
+      });
+    '''
+  "Setup tests node":
+    prefix: "test"
+    body: '''
+      const $1 = require('$2');
+
+      describe('$1', () => {
+        it('$3', () => {
+          $4
+        });
+      });
+    '''
